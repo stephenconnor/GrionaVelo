@@ -31,9 +31,9 @@ An Angular + PrimeNG app for showcasing cycling routes, deployable on GitHub Pag
 | Coastal Route Alternative | 111.2 km | 2,169 m | 473 m |
 | Girona Coastal: St Grau & ElsÀngels | 111.4 km | 1,899 m | 476 m |
 | Les Planes d’Hostoles → Osor → Sant Hilari Sacalm | 123.7 km | 4,295 m | 818 m |
-| Olot El Far Coll DUria | 143.7 km | 1,911 m | 1,102 m |
 | Olot Loop | 114.8 km | 1,410 m | 629 m |
-| Rocacorba(Girona Banyoles Rocacorba) | 82.7 km | 1,368 m | 962 m |
+| Olot → El Far → Coll d’Úria | 143.7 km | 1,911 m | 1,102 m |
+| Rocacorba (Girona → Banyoles → Rocacorba) | 82.7 km | 1,368 m | 962 m |
 | Sant Hilari Sacalm | 101.4 km | 1,130 m | 814 m |
 | St Hilari125 | 127.2 km | 1,622 m | 812 m |
 | Susqueda Reservoir Olot Loop | 151.7 km | 2,083 m | 631 m |
