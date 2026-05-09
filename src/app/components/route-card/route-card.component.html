@@ -1,11 +1,19 @@
 <p-card class="route-card">
   <ng-template #header>
-    <div class="card-image-wrapper">
+    <button
+      type="button"
+      class="card-image-wrapper image-preview-trigger"
+      [attr.aria-label]="'Open map image for ' + route.title"
+      (click)="openImagePreview(route.image, route.title + ' map', route.title + ' Map')"
+    >
       <img [src]="route.image" [alt]="route.title" class="card-hero-image" />
+      <span class="image-preview-icon" aria-hidden="true">
+        <i class="pi pi-search-plus"></i>
+      </span>
       <div class="card-title-overlay">
         <h2 class="route-title">{{ route.title }}</h2>
       </div>
-    </div>
+    </button>
   </ng-template>
 
   <div class="stats-row">
@@ -46,9 +54,17 @@
   >
     <div class="detail-content">
       <p class="detail-text">{{ route.detailedDescription }}</p>
-      <div class="detail-image-wrapper">
+      <button
+        type="button"
+        class="detail-image-wrapper image-preview-trigger"
+        [attr.aria-label]="'Open elevation profile for ' + route.title"
+        (click)="openImagePreview(route.extraImage, route.title + ' elevation profile', route.title + ' Elevation Profile')"
+      >
         <img [src]="route.extraImage" [alt]="route.title + ' detail'" class="detail-image" />
-      </div>
+        <span class="image-preview-icon image-preview-icon--detail" aria-hidden="true">
+          <i class="pi pi-search-plus"></i>
+        </span>
+      </button>
       @if (route.gpxFile) {
         <a [href]="route.gpxFile" [download]="route.title + '.gpx'" class="gpx-download">
           <div class="gpx-icon-wrapper">
@@ -63,3 +79,18 @@
     </div>
   </p-panel>
 </p-card>
+
+<p-dialog
+  [(visible)]="previewVisible"
+  [modal]="true"
+  [dismissableMask]="true"
+  [draggable]="false"
+  [resizable]="false"
+  [header]="previewTitle"
+  styleClass="image-preview-dialog"
+  appendTo="body"
+>
+  <div class="image-preview-content">
+    <img [src]="previewImage" [alt]="previewAlt" class="image-preview-full" />
+  </div>
+</p-dialog>

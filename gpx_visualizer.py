@@ -15,8 +15,14 @@ Outputs are saved beside each GPX file.
 import sys
 import math
 import json
+import argparse
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 # ============================================================
 # CONFIG
@@ -27,10 +33,21 @@ INPUT_PATH = r"G:\Git\cycling-routes\src\assets\gpx_files"
 RECURSIVE_SCAN = True
 
 TOWN_LABEL_DISTANCE_KM = 15
+ADD_TOWN_LABELS = False
 
-# Max output image heights
-MAP_IMAGE_HEIGHT_PX = 220
-PROFILE_IMAGE_HEIGHT_PX = 180
+# Output image dimensions. These ratios are tuned for the route cards:
+# maps are close to 16:9, profiles are wide but tall enough to stay readable.
+MAP_IMAGE_WIDTH_PX = 1000
+MAP_IMAGE_HEIGHT_PX = 600
+PROFILE_IMAGE_WIDTH_PX = 1200
+PROFILE_IMAGE_HEIGHT_PX = 320
+
+# Metadata export is optional because image refreshes should not rewrite JSON.
+EXPORT_METADATA = False
+
+# Some local Python installs do not have a CA bundle that validates tile CDN
+# certificates. This only affects public background map tiles.
+VERIFY_MAP_TILE_SSL = False
 
 # Route separation threshold
 LONG_ROUTE_THRESHOLD_KM = 100
@@ -68,9 +85,11 @@ except ImportError:
 
 try:
     import contextily as ctx
+    import contextily.tile as ctx_tile
 except ImportError:
     pip_install("contextily")
     import contextily as ctx
+    import contextily.tile as ctx_tile
 
 try:
     from pyproj import Transformer
@@ -84,6 +103,22 @@ except ImportError:
 # ============================================================
 
 plt.rcParams["font.family"] = "DejaVu Sans"
+
+if not VERIFY_MAP_TILE_SSL:
+    try:
+        import urllib3
+
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    except Exception:
+        pass
+
+    _contextily_requests_get = ctx_tile.requests.get
+
+    def _get_map_tile_without_ssl_verify(*args, **kwargs):
+        kwargs.setdefault("verify", False)
+        return _contextily_requests_get(*args, **kwargs)
+
+    ctx_tile.requests.get = _get_map_tile_without_ssl_verify
 
 
 # ============================================================
@@ -305,7 +340,7 @@ def find_gpx_files(input_path, recursive=True):
 # STRAVA STYLE MAP
 # ============================================================
 
-def make_route_map(points, output_path):
+def make_route_map(points, output_path, add_town_labels=False):
 
     lats = np.array([p[0] for p in points])
     lons = np.array([p[1] for p in points])
@@ -318,8 +353,7 @@ def make_route_map(points, output_path):
 
     x, y = transformer.transform(lons, lats)
 
-    # 220px high output
-    fig_width = 10
+    fig_width = MAP_IMAGE_WIDTH_PX / 100
     fig_height = MAP_IMAGE_HEIGHT_PX / 100
 
     fig, ax = plt.subplots(
@@ -327,6 +361,7 @@ def make_route_map(points, output_path):
     )
 
     fig.patch.set_facecolor("white")
+    ax.set_position([0, 0, 1, 1])
 
     pad = 2500
 
@@ -382,7 +417,7 @@ def make_route_map(points, output_path):
     )
 
     # Town labels
-    towns = get_towns_along_route(points)
+    towns = get_towns_along_route(points) if add_town_labels else []
 
     used_positions = []
 
@@ -419,18 +454,11 @@ def make_route_map(points, output_path):
             zorder=6
         )
 
-    ax.set_xticks([])
-    ax.set_yticks([])
-
-    for spine in ax.spines.values():
-        spine.set_visible(False)
-
-    plt.tight_layout()
+    ax.set_axis_off()
 
     fig.savefig(
         output_path,
-        dpi=100,
-        bbox_inches="tight"
+        dpi=100
     )
 
     plt.close(fig)
@@ -467,8 +495,7 @@ def make_elevation_profile(points, output_path):
 
     max_ele = eles.max()
 
-    # 180px high output
-    fig_width = 14
+    fig_width = PROFILE_IMAGE_WIDTH_PX / 100
     fig_height = PROFILE_IMAGE_HEIGHT_PX / 100
 
     fig, ax = plt.subplots(
@@ -582,8 +609,7 @@ def make_elevation_profile(points, output_path):
 
     fig.savefig(
         output_path,
-        dpi=100,
-        bbox_inches="tight"
+        dpi=100
     )
 
     plt.close(fig)
@@ -596,6 +622,23 @@ def make_elevation_profile(points, output_path):
 # ============================================================
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Generate route map/profile images from GPX files."
+    )
+    parser.add_argument(
+        "--metadata",
+        action="store_true",
+        help="Also regenerate routes_metadata.json."
+    )
+    parser.add_argument(
+        "--town-labels",
+        action="store_true",
+        help="Add reverse-geocoded town labels to map images."
+    )
+    args = parser.parse_args()
+
+    export_metadata = EXPORT_METADATA or args.metadata
+    add_town_labels = ADD_TOWN_LABELS or args.town_labels
 
     gpx_files = find_gpx_files(
         INPUT_PATH,
@@ -636,7 +679,8 @@ def main():
 
             make_route_map(
                 points,
-                map_output
+                map_output,
+                add_town_labels=add_town_labels
             )
 
             make_elevation_profile(
@@ -679,14 +723,16 @@ def main():
 
     output_json = Path(INPUT_PATH) / "routes_metadata.json"
 
-    with open(output_json, "w", encoding="utf-8") as f:
+    if export_metadata:
 
-        json.dump(
-            routes_json,
-            f,
-            indent=4,
-            ensure_ascii=False
-        )
+        with open(output_json, "w", encoding="utf-8") as f:
+
+            json.dump(
+                routes_json,
+                f,
+                indent=4,
+                ensure_ascii=False
+            )
 
     print("\n================================================")
     print("Finished")
@@ -694,7 +740,11 @@ def main():
     print(f"Failed: {failed}")
     print(f"Short routes: {len(short_routes)}")
     print(f"Long routes: {len(long_routes)}")
-    print(f"JSON written: {output_json}")
+
+    if export_metadata:
+        print(f"JSON written: {output_json}")
+    else:
+        print("JSON skipped: run with --metadata to regenerate routes_metadata.json")
 
 
 if __name__ == "__main__":

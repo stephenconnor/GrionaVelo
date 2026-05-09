@@ -30,6 +30,47 @@
   height: 220px;
 }
 
+.image-preview-trigger {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  display: block;
+  text-align: inherit;
+
+  &:focus-visible {
+    outline: 3px solid fade(@accent, 75%);
+    outline-offset: -3px;
+  }
+}
+
+.image-preview-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: @accent-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+
+  .pi { font-size: 1rem; }
+
+  .image-preview-trigger:hover &,
+  .image-preview-trigger:focus-visible & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .card-hero-image {
   width: 100%;
   height: 100%;
@@ -135,14 +176,22 @@
 }
 
 .detail-image-wrapper {
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.image-preview-icon--detail {
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
 .detail-image {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
   display: block;
 }
 
@@ -202,4 +251,30 @@
 .gpx-sub {
   font-size: 0.78rem;
   color: @muted;
+}
+
+:host ::ng-deep .image-preview-dialog {
+  width: min(94vw, 1180px);
+
+  .p-dialog-content {
+    padding: 0;
+    background: #111;
+    overflow: hidden;
+  }
+}
+
+.image-preview-content {
+  width: 100%;
+  max-height: 82vh;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview-full {
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  display: block;
 }
