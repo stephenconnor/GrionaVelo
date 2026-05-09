@@ -1,0 +1,124 @@
+{
+  "categories": [
+    {
+      "id": "long",
+      "label": "Long Routes",
+      "routes": [
+        {
+          "id": "lr1",
+          "title": "Banyoles Ardennes Long",
+          "image": "assets/gpx_files/longRoutes/COURSE_BanyolesArdennesLong_map.png",
+          "distance": 95.4,
+          "ascent": 1146,
+          "maxAltitude": 211,
+          "description": "This route is a Girona inland classics-style ride, inspired by the feel of the Ardennes Spring Classics rather than high mountain climbing. It combines constant rolling terrain, repeated medium-length climbs, rough rhythm changes, and virtually no prolonged flat sections. Compared to the coastal routes, this one is more about attritional fatigue than scenic climbing.",
+          "detailedDescription": "1. Girona to Banyoles – Fast Inland Roads. The route opens with smooth rolling terrain, wide agricultural roads, and fast pacing opportunities. This first section typically encourages overpacing and feels easier than it really is. The terrain gradually transitions toward narrower inland roads and hillier profiles around Banyoles. 2. Banyoles Region – Rhythm Changes Begin. Around the Banyoles area, the terrain becomes significantly more irregular, climbs arrive more frequently, and the roads start to resemble Ardennes-style terrain. Expect repeated 2–5 km climbs, short steep ramps, and continuous gear shifting. 3. Key Climbs & Terrain Features. The defining terrain of the route consists of endless short-to-medium climbs that are rarely extreme individually but extremely fatiguing collectively. Many climbs are likely 1–4 km long at gradients of 4–8%, occasionally steeper on village exits. 4. Ardennes-Style Punches. What makes this route difficult is the lack of sustained recovery, frequent anaerobic spikes, and continuous cadence changes. This mirrors Liège–Bastogne–Liège style terrain, Amstel Gold Race rhythm, and Girona pro training loops. 5. Descents. Descents are shorter than typical mountain routes, frequent and technical in places, and often immediately followed by another climb. This creates very little true recovery time and a constant muscular load throughout the ride.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_BanyolesArdennesLong_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_BanyolesArdennesLong.gpx"
+        },
+        {
+          "id": "lr2",
+          "title": "Coastal Route Alternative",
+          "image": "assets/gpx_files/longRoutes/COURSE_CoastalRouteAlternative_map.png",
+          "distance": 111.2,
+          "ascent": 2169,
+          "maxAltitude": 473,
+          "description": "This route is a classic Costa Brava coastal endurance ride, blending inland Girona roads with the rugged Mediterranean coastline. Compared to the other routes you shared, this one is less of a pure mountain stage and more of a high-tempo rolling coastal route with relentless short climbing.",
+          "detailedDescription": "1. Girona Exit – Fast Rolling Roads. The route begins with smooth inland roads leaving Girona, featuring gradual terrain that allows groups to settle and frequent false flats rather than major climbs. 2. Coastal Transition – Signature Section. The defining feature of this route is the move onto the Costa Brava coastal roads. Once near the coast, the terrain becomes continuously undulating, climbs become shorter but steeper, and recovery between efforts is minimal. This section is extremely scenic, physically deceptive, and harder than elevation totals suggest. 3. Key Climbs on the Route. This route strongly aligns with the classic Sant Grau coastal approach, typically featuring a 7–8 km climb averaging 5–6% with multiple rhythm changes. Sant Grau is famous because it links inland Girona with the coast, offers panoramic sea views higher up, and is heavily used by pro riders training around Girona. 4. Coastal Rollers (Tossa / Sant Feliu Region). After the main climb, the road constantly rises and falls. Short climbs often hit 7–10%, especially exiting coves and coastal bends. These repeated efforts accumulate fatigue rapidly. 5. Inland Return Section. Returning inland, roads become smoother and faster, with more gradual climbs and opportunities for sustained tempo riding. However, fatigue from the coast makes even mild gradients feel harder. 6. Scenery & Road Feel. Highlights include Mediterranean sea views, cliffside roads, pine forest descents, and quiet inland Catalunya villages.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_CoastalRouteAlternative_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_CoastalRouteAlternative.gpx"
+        },
+        {
+          "id": "lr3",
+          "title": "Banyoles Hills",
+          "image": "assets/gpx_files/longRoutes/COURSE_BanyolesHills_map.png",
+          "distance": 89.5,
+          "ascent": 896,
+          "maxAltitude": 323,
+          "description": "This route is a compact inland Girona climbing loop focused on the rolling hill systems around Banyoles. Compared to the longer “Banyoles Ardennes Long” route, this version is shorter and more controlled, but still delivers a surprisingly high climbing load through continuous terrain changes.",
+          "detailedDescription": "1. Girona Exit – Fast & Flowing. The opening section features smooth agricultural roads, fast rolling terrain, and gentle elevation changes. This terrain encourages high speed and allows groups to establish rhythm quickly. However, climbs begin appearing sooner than expected. 2. Transition Into Banyoles Hills. As the route approaches Banyoles, roads narrow, terrain becomes increasingly irregular, and climbing frequency rises sharply. This section defines the ride with almost constant elevation change despite the absence of huge climbs. 3. Key Climbs & Terrain Features. The core terrain consists of repeated medium-length climbs, frequent short ramps, and technical rhythm changes. Typical climbs range from 1–4 km at gradients of 4–7%, with occasional steeper pitches exiting villages. These climbs are ideal for tempo work but become fatiguing due to their repetition. 4. Rocacorba Foothill Terrain. The route profile strongly suggests movement through the lower Rocacorba region or nearby inland hill systems. This terrain includes long drags, false flats, and sustained seated climbing. Even without summiting Rocacorba itself, the surrounding roads accumulate elevation rapidly. 5. Ride Character. This is not a route defined by one major climb. Instead, fatigue builds through repetition, with climbs arriving continuously and recovery windows remaining short. The difficulty comes from sustained aerobic pressure, repeated threshold efforts, and constant terrain management. 6. Descents. Descents are short, flowing, and often technical through wooded sections. Unlike major mountain descents, they rarely provide full recovery, with another climb usually beginning shortly afterward.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_BanyolesHills_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_BanyolesHills.gpx"
+        },
+        {
+          "id": "lr4",
+          "title": "Girona Coastal: St Grau & Els Àngels",
+          "image": "assets/gpx_files/longRoutes/COURSE_GironaCoastal_StGrau_ElsÀngels_map.png",
+          "distance": 111.4,
+          "ascent": 1899,
+          "maxAltitude": 476,
+          "description": "This route is a classic Girona benchmark ride, combining the rugged Costa Brava coastline with two of the region’s most iconic climbs: Sant Grau d’Ardenya and Els Àngels. It is one of the most balanced Girona routes, featuring coastal terrain, sustained climbing, fast inland tempo roads, and a long endurance feel without extreme elevation.",
+          "detailedDescription": "1. Girona Exit – Fast Rolling Terrain. The route begins with smooth inland roads leaving Girona, gentle rollers, and an opportunity to settle into rhythm. This opening section typically feels fast and controlled, but it can encourage overpacing when riding in a group. Gradually, the terrain becomes hillier approaching the coast. 2. Coastal Transition – Costa Brava Terrain. Once near the coast, roads narrow, elevation changes become more frequent, and the route becomes rhythmically demanding. The coastal section includes repeated short climbs, technical descents, and cliffside roads with Mediterranean sea views. This terrain creates constant power fluctuations and produces fatigue faster than expected. 3. Sant Grau d’Ardenya. One of the defining climbs of Girona cycling, Sant Grau typically measures around 7–8 km with an average gradient of 5–6%. The climb is variable and rolling rather than brutally steep. Its constantly changing gradients repeatedly interrupt rhythm, while upper sections become more exposed. Sant Grau is famous for its Mediterranean views, technical approach roads, and its role linking Girona’s inland terrain with the Costa Brava coastline. It remains a staple climb for professional riders training around Girona. 4. Els Àngels. The second signature climb of the route, Els Àngels is approximately 10 km long with a steady 3–4% average gradient. Unlike Sant Grau, Els Àngels is smooth and controlled, making it ideal for sustained seated climbing and consistent pacing. The climb is iconic due to its popularity among Girona-based professionals, sheltered tree-lined sections, and suitability for tempo and threshold efforts. By the time riders reach Els Àngels, fatigue from the coastal section is already significant, making the climb feel more demanding than the numbers suggest. 5. Descents. The route includes two distinct descent styles. Coastal descents are technical, twisty, and require attention and bike handling skills, while inland descents are faster, more flowing, and better suited for recovery and speed maintenance.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_GironaCoastal_StGrau_ElsÀngels_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/Course_GironaCoastal_StGrau_ElsÀngels.gpx"
+        },
+        {
+          "id": "lr5",
+          "title": "Les Planes d’Hostoles → Osor → Sant Hilari Sacalm",
+          "image": "assets/gpx_files/longRoutes/COURSE_LesPlanesdHostoles_Osor_SantHilariSacalm_map.png",
+          "distance": 123.7,
+          "ascent": 4295,
+          "maxAltitude": 818,
+          "description": "This route is a deep inland Catalunya mountain ride centered around one of the most iconic cycling roads in the Girona region: the Osor Road and the Sant Hilari Sacalm climb system. Compared to the coastal routes, this is a far more mountainous, sustained, and rhythm-based climbing experience, featuring long uninterrupted climbs through dense forest roads with very little traffic.",
+          "detailedDescription": "1. Girona Exit & Volcanic Zone Approach. The opening section heads northwest toward the Garrotxa volcanic region and the Les Planes d’Hostoles area. Terrain initially consists of rolling agricultural roads, gradual elevation gain, and fast pacing opportunities. The riding here feels smooth, efficient, and highly aerobic, although the climbing load progressively builds throughout the route. 2. Osor Road – The Signature Feature. The Osor Road is one of the most famous cycling roads in the Girona region and forms the defining feature of this ride. It is characterized by long sustained ascents, smooth gradients, and continuous forest-covered climbing. The road is highly regarded because traffic is extremely low, road surface quality is excellent, and the climbing rhythm is exceptionally consistent. Unlike coastal climbs, there are very few interruptions, allowing riders to settle into sustained tempo efforts. Typical climbing profiles involve 15–25 km of gradual uphill terrain, with most gradients ranging from 3–6% and rarely becoming excessively steep. This creates a pure endurance climbing experience focused more on aerobic stress than explosive fatigue. 3. Sant Hilari Sacalm Region. The route likely reaches or passes through Sant Hilari Sacalm, one of the highest inland plateaus near Girona. The region is famous for cool forest roads and is a popular destination for summer climbing rides. Terrain characteristics include long drags, false flats, and sustained seated climbing, rewarding riders who can maintain steady pacing over extended periods. 4. Descents. Descents on this route are long, fast, and flowing. Compared to coastal descents, they are generally less technical, feature more predictable corners, and make it easier to maintain speed. This provides better recovery opportunities and supports high-speed endurance riding over long distances.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_LesPlanesdHostoles_Osor_SantHilariSacalm_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_LesPlanesdHostoles_Osor_SantHilariSacalm.gpx"
+        }
+      ]
+    },
+    {
+      "id": "short",
+      "label": "Short Routes",
+      "routes": [
+        {
+          "id": "sr1",
+          "title": "Banyoles Ardennes Long",
+          "image": "assets/gpx_files/longRoutes/COURSE_BanyolesArdennesLong_map.png",
+          "distance": 95.4,
+          "ascent": 1146,
+          "maxAltitude": 211,
+          "description": "This is a demanding road cycling loop based out of Banyoles — the lakeside town in the Girona province of Catalunya, famous for hosting the 1992 Barcelona Olympics rowing events. The route heads north and east into the rolling foothills of the Garrotxa and Pla de l'Estany regions before looping back through a series of undulating climbs. Despite a relatively modest maximum elevation of 211m, the route earns its difficulty through the accumulation of repeated climbs across nearly 100km, giving it an 'ardennes' character with punchy, rolling terrain rather than one or two epic cols.",
+          "detailedDescription": "Km 0–8 — Girona warm-up. The route departs from the eastern side of Banyoles lake at around 69m and begins a gentle roll northward through quiet back roads. This section is relatively flat with minor undulation.\n\nKm 8.6–18.8 — First sustained climb (~91m gain over 10km). A steady rise through wooded terrain northeast of Banyoles. Average gradient ~0.9% with steeper pockets.\n\nKm 20–26 — Mieres climb (~63m gain). A short, punchy 2km climb averaging ~2.9% — classic Ardennes-style terrain.\n\nKm 26–41 — Rolling descent and plains. The route drops toward the Fluvià valley (24–33m elevation) with long straight fast sections.\n\nKm 41–53 — Undulating recovery. A mid-length climb (~44m gain) around km 41–44 before skirting the southern edge of Alta Garrotxa.\n\nKm 53.7–59.6 — Biggest climb of the day (~123m over ~6km). A sustained 2% average gradient into the Garrotxa hills with forested ridgelines.\n\nKm 60–64 — Rocacorba area (211m high point). The route reaches its maximum elevation on the lower flanks of Rocacorba — not the full summit climb.\n\nKm 64–80 — Rolling Rocacorba/Collsacabra foothills. Elevated terrain (140–190m) with continuous rolling rather than a simple descent.\n\nKm 80.4–81.5 — Final punchy climb (~31m gain). A late short wall typical of Ardennes-style profiles.\n\nKm 82–95.4 — Long descent to Banyoles. A 13km return to the lake at ~69m, finishing near popular cyclist cafés.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_BanyolesArdennesLong_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_BanyolesArdennesLong.gpx"
+        },
+        {
+          "id": "sr2",
+          "title": "Banyoles Hills",
+          "image": "assets/gpx_files/longRoutes/COURSE_BanyolesHills_map.png",
+          "distance": 89.5,
+          "ascent": 896,
+          "maxAltitude": 323,
+          "description": "This route is a compact inland Girona climbing loop focused on the rolling hill systems around Banyoles. Compared to the longer “Banyoles Ardennes Long” route, this version is shorter and more controlled, but still delivers a surprisingly high climbing load through continuous terrain changes.",
+          "detailedDescription": "1. Girona Exit – Fast & Flowing. The opening section features smooth agricultural roads, fast rolling terrain, and gentle elevation changes. This terrain encourages high speed and allows groups to establish rhythm quickly. However, climbs begin appearing sooner than expected. 2. Transition Into Banyoles Hills. As the route approaches Banyoles, roads narrow, terrain becomes increasingly irregular, and climbing frequency rises sharply. This section defines the ride with almost constant elevation change despite the absence of huge climbs. 3. Key Climbs & Terrain Features. The core terrain consists of repeated medium-length climbs, frequent short ramps, and technical rhythm changes. Typical climbs range from 1–4 km at gradients of 4–7%, with occasional steeper pitches exiting villages. These climbs are ideal for tempo work but become fatiguing due to their repetition. 4. Rocacorba Foothill Terrain. The route profile strongly suggests movement through the lower Rocacorba region or nearby inland hill systems. This terrain includes long drags, false flats, and sustained seated climbing. Even without summiting Rocacorba itself, the surrounding roads accumulate elevation rapidly. 5. Ride Character. This is not a route defined by one major climb. Instead, fatigue builds through repetition, with climbs arriving continuously and recovery windows remaining short. The difficulty comes from sustained aerobic pressure, repeated threshold efforts, and constant terrain management. 6. Descents. Descents are short, flowing, and often technical through wooded sections. Unlike major mountain descents, they rarely provide full recovery, with another climb usually beginning shortly afterward.",
+          "extraImage": "assets/gpx_files/longRoutes/COURSE_BanyolesHills_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_BanyolesHills.gpx"
+        },
+        {
+          "id": "sr3",
+          "title": "Blessington Lakes Spin",
+          "image": "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=800&q=80",
+          "distance": 45,
+          "ascent": 520,
+          "maxAltitude": 234,
+          "description": "A scenic and accessible loop around the Poulaphouca Reservoir in Co. Wicklow. Rolling countryside, quiet roads and beautiful lakeshore sections make this a favourite for club run days.",
+          "detailedDescription": "Starting from Blessington town, the route descends to the lakeside before circumnavigating the reservoir in a clockwise direction. The western shore is the most dramatic, with the road clinging closely to the water's edge. The climb back into Blessington is steady but never brutal. This route is popular with local cycling clubs on Sunday mornings and the caf\u00e9 in Blessington makes an excellent finish-line reward.",
+          "extraImage": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80",
+          "gpxFile": "gpx/blessington-lakes-spin.gpx"
+        },
+        {
+          "id": "sr4",
+          "title": "Vartry Reservoir Loop",
+          "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80",
+          "distance": 28,
+          "ascent": 340,
+          "maxAltitude": 198,
+          "description": "A hidden gem tucked into the eastern Wicklow foothills. Quiet lanes, woodland sections and the serene waters of the Vartry Reservoir combine for a peaceful and picturesque outing.",
+          "detailedDescription": "The Vartry route is one of the best-kept secrets in Leinster cycling. The roads are exceptionally quiet and the surface is good throughout. The reservoir itself is surrounded by mature woodland and there are several excellent viewpoints along the way. The route passes through Roundwood, the highest village in Ireland, where there are good caf\u00e9 options at the halfway point.",
+          "extraImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+          "gpxFile": "gpx/vartry-reservoir-loop.gpx"
+        }
+      ]
+    }
+  ]
+}

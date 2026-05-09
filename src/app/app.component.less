@@ -1,0 +1,125 @@
+// ── Design tokens ──
+@accent:       #2e7d32;
+@accent-light: #66bb6a;
+@header-bg:    #1a2e1a;
+@header-text:  #f0f4f0;
+@header-sub:   #8faf8f;
+@muted:        #7a8c7a;
+@divider:      rgba(0, 0, 0, 0.09);
+
+// ── Shell ──
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--app-bg);
+}
+
+// ── Header ──
+.app-header {
+  background: @header-bg;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  background: @accent;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pi {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: @header-text;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.brand-tagline {
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: @header-sub;
+}
+
+.header-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(46, 125, 50, 0.08);
+  border: 1px solid rgba(46, 125, 50, 0.25);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: @accent;
+  letter-spacing: 0.03em;
+}
+
+.header-stripe {
+  height: 3px;
+  background: linear-gradient(90deg, @accent 0%, @accent-light 50%, @accent 100%);
+}
+
+// ── Main ──
+.app-main {
+  flex: 1;
+  padding: 40px 24px;
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+// ── Footer ──
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: @muted;
+  border-top: 1px solid @divider;
+}
+
+// ── Responsive ──
+@media (max-width: 600px) {
+  .header-inner   { padding: 0 16px; }
+  .brand-tagline  { display: none; }
+  .app-main       { padding: 24px 12px; }
+}

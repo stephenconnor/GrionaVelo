@@ -1,0 +1,45 @@
+@if (loading) {
+  <div class="loading-state">
+    <p-progressSpinner strokeWidth="3" animationDuration="1s" />
+    <p>Loading routes...</p>
+  </div>
+}
+
+@if (error) {
+  <div class="error-state">
+    <i class="pi pi-exclamation-triangle"></i>
+    <p>{{ error }}</p>
+  </div>
+}
+
+@if (!loading && !error && categories.length) {
+  <p-tabs [value]="categories[0].id" class="routes-tabs">
+    <p-tablist>
+      @for (cat of categories; track cat.id) {
+        <p-tab [value]="cat.id">
+          <i class="pi {{ cat.id === 'long' ? 'pi-flag' : 'pi-star' }} tab-icon"></i>
+          {{ cat.label }}
+          <span class="tab-count">{{ cat.routes.length }}</span>
+        </p-tab>
+      }
+    </p-tablist>
+
+    <p-tabpanels>
+      @for (cat of categories; track cat.id) {
+        <p-tabpanel [value]="cat.id">
+          <div class="panel-header">
+            <h2 class="panel-title">{{ cat.label }}</h2>
+            <p class="panel-subtitle">{{ cat.routes.length }} routes available</p>
+          </div>
+          <div class="routes-grid">
+            @for (route of cat.routes; track route.id) {
+              <div class="route-col">
+                <app-route-card [route]="route" />
+              </div>
+            }
+          </div>
+        </p-tabpanel>
+      }
+    </p-tabpanels>
+  </p-tabs>
+}

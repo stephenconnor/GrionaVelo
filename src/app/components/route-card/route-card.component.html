@@ -1,0 +1,65 @@
+<p-card class="route-card">
+  <ng-template #header>
+    <div class="card-image-wrapper">
+      <img [src]="route.image" [alt]="route.title" class="card-hero-image" />
+      <div class="card-title-overlay">
+        <h2 class="route-title">{{ route.title }}</h2>
+      </div>
+    </div>
+  </ng-template>
+
+  <div class="stats-row">
+    <div class="stat-item">
+      <div class="stat-icon-wrapper">
+        <i class="pi pi-map stat-icon"></i>
+      </div>
+      <span class="stat-value">{{ route.distance }} km</span>
+      <span class="stat-label">Distance</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-icon-wrapper">
+        <i class="pi pi-arrow-up stat-icon"></i>
+      </div>
+      <span class="stat-value">{{ route.ascent }} m</span>
+      <span class="stat-label">Ascent</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-icon-wrapper">
+        <i class="pi pi-cloud stat-icon"></i>
+      </div>
+      <span class="stat-value">{{ route.maxAltitude }} m</span>
+      <span class="stat-label">Max Altitude</span>
+    </div>
+  </div>
+
+  <p class="route-description">{{ route.description }}</p>
+
+  <p-panel
+    header="Route Details"
+    [toggleable]="true"
+    [collapsed]="true"
+    class="route-detail-panel"
+    expandIcon="pi pi-chevron-up"
+    collapseIcon="pi pi-chevron-down"
+  >
+    <div class="detail-content">
+      <p class="detail-text">{{ route.detailedDescription }}</p>
+      <div class="detail-image-wrapper">
+        <img [src]="route.extraImage" [alt]="route.title + ' detail'" class="detail-image" />
+      </div>
+      @if (route.gpxFile) {
+        <a [href]="route.gpxFile" [download]="route.title + '.gpx'" class="gpx-download">
+          <div class="gpx-icon-wrapper">
+            <i class="pi pi-download"></i>
+          </div>
+          <div class="gpx-text">
+            <span class="gpx-label">Download GPX</span>
+            <span class="gpx-sub">{{ route.title }}</span>
+          </div>
+        </a>
+      }
+    </div>
+  </p-panel>
+</p-card>

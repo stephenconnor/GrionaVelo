@@ -1,0 +1,33 @@
+<div class="app-shell">
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <i class="pi pi-bolt"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">GironaVelo</span>
+          <span class="brand-tagline">Cycling Route Guide</span>
+        </div>
+      </div>
+      <div class="header-badge">
+        <i class="pi pi-map-marker"></i>
+        <span>Ireland</span>
+      </div>
+    </div>
+    <div class="header-stripe"></div>
+  </header>
+
+  <!-- Routed content -->
+  <main class="app-main">
+    <div class="content-wrapper">
+      <router-outlet />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>GironaVelo &copy; {{ currentYear }} &mdash; All routes ridden, all roads loved.</p>
+  </footer>
+</div>

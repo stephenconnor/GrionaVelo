@@ -1,0 +1,148 @@
+@use 'primeicons/primeicons.css';
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lato:wght@300;400;500;700&display=swap');
+
+/* ── Design Tokens ── */
+:root {
+  --accent: #2e7d32;
+  --accent-light: #66bb6a;
+  --accent-dark: #1b5e20;
+
+  --app-bg: #f4f6f4;
+  --header-bg: #1a2e1a;
+  --header-text: #f0f4f0;
+  --header-sub: #8faf8f;
+
+  --badge-bg: rgba(46, 125, 50, 0.08);
+  --badge-border: rgba(46, 125, 50, 0.25);
+
+  --divider: rgba(0,0,0,0.09);
+  --heading-color: #1a2e1a;
+  --muted: #7a8c7a;
+
+  /* Card vars */
+  --stats-border: rgba(0,0,0,0.08);
+  --icon-bg: #e8f5e9;
+  --icon-color: #2e7d32;
+  --stat-value-color: #1a2e1a;
+  --stat-label-color: #7a8c7a;
+  --description-color: #3a4a3a;
+}
+
+/* ── Base Reset ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background: var(--app-bg);
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── PrimeNG Overrides ── */
+
+/* Tabs */
+.routes-tabs {
+  .p-tabs {
+    background: transparent;
+  }
+
+  .p-tablist {
+    background: transparent;
+    border-bottom: 2px solid var(--divider);
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .p-tab {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    padding: 14px 24px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: var(--accent);
+    }
+
+    &[data-p-active="true"] {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+  }
+
+  .p-tabpanels {
+    background: transparent;
+    padding: 0;
+  }
+
+  .p-tabpanel {
+    padding: 0;
+  }
+}
+
+/* Card */
+.p-card {
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05) !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13), 0 2px 8px rgba(0,0,0,0.08) !important;
+  }
+
+  .p-card-body {
+    padding: 0 20px 20px !important;
+  }
+
+  .p-card-content {
+    padding: 0 !important;
+  }
+}
+
+/* Panel */
+.route-detail-panel {
+  .p-panel {
+    border: 1px solid var(--divider) !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+  }
+
+  .p-panel-header {
+    background: #f0f4f0 !important;
+    padding: 12px 16px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-dark) !important;
+    cursor: pointer;
+  }
+
+  .p-panel-content {
+    padding: 16px !important;
+    background: #fafcfa !important;
+  }
+
+  .p-panel-toggle-icon {
+    color: var(--accent) !important;
+  }
+}
+
+/* Progress Spinner */
+.p-progressspinner-circle {
+  stroke: var(--accent) !important;
+}

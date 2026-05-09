@@ -1,0 +1,134 @@
+[
+    {
+        "title": "COURSE_BanyolesArdennesLong",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_BanyolesArdennesLong_map.png",
+        "distance": 95.4,
+        "ascent": 1146,
+        "maxAltitude": 211,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_BanyolesArdennesLong_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_BanyolesArdennesLong.gpx"
+    },
+    {
+        "title": "COURSE_BanyolesHills",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_BanyolesHills_map.png",
+        "distance": 89.5,
+        "ascent": 896,
+        "maxAltitude": 323,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_BanyolesHills_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_BanyolesHills.gpx"
+    },
+    {
+        "title": "COURSE_CoastalRouteAlternative",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_CoastalRouteAlternative_map.png",
+        "distance": 111.2,
+        "ascent": 2169,
+        "maxAltitude": 473,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_CoastalRouteAlternative_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_CoastalRouteAlternative.gpx"
+    },
+    {
+        "title": "COURSE_GironaCoastal→StGrau→ElsÀngels",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_GironaCoastal→StGrau→ElsÀngels_map.png",
+        "distance": 111.4,
+        "ascent": 1899,
+        "maxAltitude": 476,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_GironaCoastal→StGrau→ElsÀngels_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_GironaCoastal→StGrau→ElsÀngels.gpx"
+    },
+    {
+        "title": "COURSE_LesPlanesdHostoles→Osor→SaintHilariSacalm",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_LesPlanesdHostoles→Osor→SaintHilariSacalm_map.png",
+        "distance": 123.7,
+        "ascent": 4295,
+        "maxAltitude": 818,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_LesPlanesdHostoles→Osor→SaintHilariSacalm_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_LesPlanesdHostoles→Osor→SaintHilariSacalm.gpx"
+    },
+    {
+        "title": "COURSE_OlotElFarCollDUria",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_OlotElFarCollDUria_map.png",
+        "distance": 143.7,
+        "ascent": 1911,
+        "maxAltitude": 1102,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_OlotElFarCollDUria_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_OlotElFarCollDUria.gpx"
+    },
+    {
+        "title": "COURSE_OlotLoop",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_OlotLoop_map.png",
+        "distance": 114.8,
+        "ascent": 1410,
+        "maxAltitude": 629,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_OlotLoop_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_OlotLoop.gpx"
+    },
+    {
+        "title": "COURSE_Rocacorba(GironaBanyolesRocacorba)",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_Rocacorba(GironaBanyolesRocacorba)_map.png",
+        "distance": 82.7,
+        "ascent": 1368,
+        "maxAltitude": 962,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_Rocacorba(GironaBanyolesRocacorba)_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_Rocacorba(GironaBanyolesRocacorba).gpx"
+    },
+    {
+        "title": "COURSE_SantHilariSacalm",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_SantHilariSacalm_map.png",
+        "distance": 101.4,
+        "ascent": 1130,
+        "maxAltitude": 814,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_SantHilariSacalm_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_SantHilariSacalm.gpx"
+    },
+    {
+        "title": "COURSE_StHilari125",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_StHilari125_map.png",
+        "distance": 127.2,
+        "ascent": 1622,
+        "maxAltitude": 812,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_StHilari125_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_StHilari125.gpx"
+    },
+    {
+        "title": "COURSE_SusquedaReservoirOlotLoop",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_SusquedaReservoirOlotLoop_map.png",
+        "distance": 151.7,
+        "ascent": 2083,
+        "maxAltitude": 631,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_SusquedaReservoirOlotLoop_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_SusquedaReservoirOlotLoop.gpx"
+    },
+    {
+        "title": "COURSE_TossadeMarCoastal",
+        "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_TossadeMarCoastal_map.png",
+        "distance": 124.8,
+        "ascent": 1716,
+        "maxAltitude": 526,
+        "description": "",
+        "detailedDescription": "",
+        "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_TossadeMarCoastal_profile.png",
+        "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\longRoutes\\COURSE_TossadeMarCoastal.gpx"
+    }
+]
