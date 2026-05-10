@@ -126,6 +126,14 @@ The deploy workflow refreshes this README, builds the GitHub Pages version, and 
 
 After the first deploy, go to **Settings -> Pages -> Branch: gh-pages -> Save**.
 
+If GitHub Pages keeps serving an older version after a successful deploy, force a fresh `gh-pages` commit:
+
+```bash
+npx gh-pages -d dist/cycling-routes/browser --message "Force GitHub Pages redeploy"
+```
+
+Then wait a minute and check `https://<username>.github.io/<repo-name>/routes.json`.
+
 Your site URL will be:
 
 ```text
