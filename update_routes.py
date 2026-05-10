@@ -33,6 +33,27 @@ ROOT = Path(__file__).resolve().parent
 GPX_ROOT = ROOT / "src" / "assets" / "gpx_files"
 PUBLIC_ROUTES_JSON = ROOT / "public" / "routes.json"
 
+
+def load_dotenv(path=ROOT / ".env"):
+    if not path.exists():
+        return
+
+    with path.open("r", encoding="utf-8") as file:
+        for line in file:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+
+            key, value = line.split("=", 1)
+            key = key.strip()
+            value = value.strip().strip("'\"")
+
+            if key and key not in os.environ:
+                os.environ[key] = value
+
+
+load_dotenv()
+
 MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 WEB_SEARCH_TOOL = os.environ.get("OPENAI_WEB_SEARCH_TOOL", "web_search")
 OPENAI_COPY_RETRIES = int(os.environ.get("OPENAI_COPY_RETRIES", "4"))
@@ -393,6 +414,12 @@ def main():
         help="Scan and build the route data without writing public/routes.json.",
     )
     args = parser.parse_args()
+
+    if args.generate_descriptions and not os.environ.get("OPENAI_API_KEY"):
+        sys.exit(
+            "OPENAI_API_KEY is not set. Add it to a .env file in the project root "
+            "or set it in your terminal before running this command."
+        )
 
     scanned_count, generated_copy, failed_copy = merge_routes(args)
 

@@ -156,6 +156,18 @@ To only refresh the README:
 npm run readme:update
 ```
 
+To generate missing route descriptions with OpenAI, create a local `.env` file in the project root:
+
+```bash
+OPENAI_API_KEY=sk-your-key-here
+```
+
+Then run:
+
+```bash
+npm run routes:update:copy
+```
+
 ## Commands
 
 {command_table(scripts)}

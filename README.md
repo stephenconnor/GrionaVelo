@@ -29,7 +29,7 @@ An Angular + PrimeNG app for showcasing cycling routes, deployable on GitHub Pag
 | Banyoles Ardennes Long | 95.4 km | 1,146 m | 211 m |
 | Banyoles Hills | 89.5 km | 896 m | 323 m |
 | Coastal Route Alternative | 111.2 km | 2,169 m | 473 m |
-| Deeeep Deeeep Catalyuna | 149.6 km | 1,870 m | 324 m |
+| Deeeep Deeeep Catalunya | 149.6 km | 1,870 m | 324 m |
 | Girona Coastal: St Grau & ElsÀngels | 111.4 km | 1,899 m | 476 m |
 | Girona Figueres St Pellaia | 145.1 km | 1,656 m | 343 m |
 | Les Planes d’Hostoles → Osor → Sant Hilari Sacalm | 123.7 km | 4,295 m | 818 m |
@@ -93,6 +93,18 @@ To only refresh the README:
 
 ```bash
 npm run readme:update
+```
+
+To generate missing route descriptions with OpenAI, create a local `.env` file in the project root:
+
+```bash
+OPENAI_API_KEY=sk-your-key-here
+```
+
+Then run:
+
+```bash
+npm run routes:update:copy
 ```
 
 ## Commands
