@@ -65,7 +65,6 @@
           "gpxFile": "assets/gpx_files/longRoutes/COURSE_LesPlanesdHostoles_Osor_SaintHilariSacalm.gpx"
         },
         {
-          
           "id": "lr6",
           "title": "Olot → El Far → Coll d’Úria",
           "image": "assets/gpx_files/longRoutes/COURSE_OlotElFarCollDUria_map.png",
@@ -90,7 +89,6 @@
           "gpxFile": "assets/gpx_files/longRoutes/COURSE_OlotLoop.gpx"
         },
         {
-          
           "id": "lr8",
           "title": "Rocacorba (Girona → Banyoles → Rocacorba)",
           "image": "assets/gpx_files/longRoutes/COURSE_Rocacorba(GironaBanyolesRocacorba)_map.png",
@@ -123,11 +121,12 @@
           "description": "This route is a classic Girona mountain endurance ride built around the long forest ascents leading toward Sant Hilari Sacalm. Compared to other inland routes, this version is more compact than the longest mountain epics while still remaining highly climb-focused, extremely rhythmical, and designed for sustained aerobic output. It is the kind of route that looks manageable on paper but gradually wears riders down through uninterrupted climbing load, delivering a pure diesel-climber experience and a true Girona endurance-training classic.",
           "detailedDescription": "1. Girona Departure – Fast Rolling Roads. Leaving Girona, the route opens on smooth inland valley roads, gentle rollers, and fast agricultural terrain. This opening section feels efficient and fast-moving, making it ideal for group tempo riding. The early kilometers are comfortable and highly aerobic, feeling significantly easier than the route eventually becomes. 2. Transition Toward Mountain Terrain. As the route heads inland, roads narrow, forest cover increases, and elevation gain becomes more sustained. The riding atmosphere changes dramatically as traffic decreases, climbs become uninterrupted, and the terrain develops a true mountain-road character. This is where the ride quietly begins accumulating fatigue and shifts from tempo riding into sustained climbing mode. 3. Sant Hilari Sacalm Climbing Roads. The route centers around the climb systems leading toward Sant Hilari Sacalm. Typical characteristics include long steady ascents with gradients generally between 4–6% and continuous elevation gain over many kilometers. Unlike steeper Girona climbs, rhythm interruptions are minimal, cadence remains relatively constant, and riders can settle into long aerobic efforts. This terrain is highly valued by professional riders, endurance climbers, and Gran Fondo athletes because it is ideal for aerobic conditioning and sustained pacing. 4. Climbing Feel – Lower Sections. The climbing begins subtly through rolling transitions, gradual uphill drags, and forest-lined roads. The gradients rarely shock the legs but instead slowly increase muscular load over time. This opening climbing phase encourages seated climbing and smooth power delivery rather than explosive efforts. 5. Middle Mountain Terrain. As elevation builds, climbs become more sustained, recovery sections shorten, and fatigue accumulates steadily. This section rewards smooth pacing, efficient seated climbing, and controlled breathing rhythm. The riding style here is defined by pure aerobic endurance rather than repeated high-intensity surges. 6. Upper Slopes. Near the higher elevations, temperatures cool noticeably, roads feel more remote, and climbs become psychologically longer. This is where riders begin feeling cumulative fatigue deeply, making endurance efficiency and pacing discipline increasingly important. 7. Overall Ride Character. St Hilari 125 is one of the strongest examples of Girona’s smooth, rhythm-based mountain riding. The route emphasizes sustained aerobic climbing, quiet forest roads, and gradual fatigue accumulation rather than extreme gradients or explosive efforts. It rewards patience, endurance conditioning, and the ability to maintain consistent tempo over many hours in the saddle.",
           "extraImage": "assets/gpx_files/longRoutes/COURSE_StHilari125_profile.png",
-          "gpxFile": "assets/gpx_files/longRoutes/COURSE_StHilari125.gpx"
+          "gpxFile": "assets/gpx_files/longRoutes/COURSE_StHilari125.gpx",
+          "id": "lr13"
         },
         {
-         "id": "lr11",
-         "title": "Susqueda Reservoir Olot Loop",
+          "id": "lr11",
+          "title": "Susqueda Reservoir Olot Loop",
           "image": "assets/gpx_files/longRoutes/COURSE_SusquedaReservoirOlotLoop_map.png",
           "distance": 151.7,
           "ascent": 2083,
@@ -148,6 +147,30 @@
           "detailedDescription": "1. Girona Departure – Fast Inland Roads. Leaving Girona, the route begins on smooth inland valley roads, fast rolling terrain, and gentle aerobic gradients. This opening section encourages high speed, feels efficient and controlled, and often suits group riding well. Gradually, however, the terrain becomes sharper, elevation changes become more frequent, and the influence of the coastline begins to dominate the ride character. 2. Costa Brava Coastal Section. The defining feature of the route is the spectacular terrain surrounding Tossa de Mar. This section includes cliffside roads, technical descents, short repeated climbs, and continuous ocean exposure. Riding here feels dynamic, technical, and highly engaging. Unlike inland Girona routes, there is almost no sustained rhythm. Climbs constantly interrupt momentum and recovery periods remain very short throughout the coastal section. 3. Coastal Rollers. The Costa Brava terrain creates endless short climbs, frequent steep ramps, and constant cadence changes. Typical climbs range between 1–3 km with gradients often reaching 6–10%. Descents are usually short and immediately followed by additional climbing. This creates high normalized power demands, significant muscular fatigue, and constant transitions between aerobic and threshold-level efforts. 4. Sant Grau Region. The route likely includes or approaches terrain associated with Sant Grau d’Ardenya, one of Girona’s most iconic coastal climbs. Sant Grau typically features a 7–8 km ascent with variable gradients and repeated rhythm disruptions throughout the climb. The climb is famous because it perfectly links inland Girona terrain with the Mediterranean coastline while offering exceptional scenery and constantly evolving road character. 5. Descents. Coastal descents throughout the route are technical, twisty, and highly engaging. Riders must manage braking, cornering, and rapid terrain transitions carefully. Unlike inland mountain descents, these roads rarely allow complete recovery because another climb often begins immediately after the descent ends. 6. Ride Character. This route is defined by constant momentum changes, repeated accelerations, and the challenge of maintaining rhythm on highly irregular terrain. It rewards riders who can handle repeated power surges, efficient climbing transitions, and technical descending while managing fatigue over a long endurance ride. 7. Overall Impression. Tossa de Mar Coastal is one of the purest Costa Brava cycling experiences in the collection. Combining dramatic Mediterranean scenery, rolling coastal roads, and relentless terrain changes, it delivers a uniquely engaging endurance ride that feels harder than the raw elevation numbers suggest.",
           "extraImage": "assets/gpx_files/longRoutes/COURSE_TossadeMarCoastal_profile.png",
           "gpxFile": "assets/gpx_files/longRoutes/COURSE_TossadeMarCoastal.gpx"
+        },
+        {
+          "title": "Deeeep Deeeep Catalunya",
+          "image": "assets/gpx_files/longRoutes/DeeeepDeeeepCatalyuna_map.png",
+          "distance": 149.6,
+          "ascent": 1870,
+          "maxAltitude": 324,
+          "description": "This route is a true Catalunya endurance epic — a massive inland adventure combining long rolling valley roads, sustained mountain climbing, remote inland terrain, and endless fatigue accumulation. Compared to shorter Girona loops, this ride feels bigger, wilder, more psychologically demanding, and far more ultra-endurance in character. It is the kind of route that starts comfortably, quietly escalates, and eventually becomes a battle of pacing, fueling, and endurance durability. This is one of the most complete big-day endurance rides and inland Catalunya mountain experiences in the collection. Due to the remote nature of parts of the route, riders should stock up on food and water whenever the opportunity arises.",
+          "detailedDescription": "1. Girona Departure – Fast Early Tempo. Leaving Girona, the route begins on smooth inland roads, gentle rolling terrain, and fast aerobic valley sections. The opening kilometers feel efficient and encourage high speed, which can deceptively hide the scale of the day ahead. This terrain suits tempo riding, group rotation, and controlled aerobic pacing. Gradually, however, climbs lengthen, terrain becomes more remote, and opportunities for passive recovery begin to decrease. 2. Transition Into Deep Inland Catalunya. As the ride progresses, roads narrow, villages become increasingly isolated, and elevation gain becomes more sustained. This is where the route changes character from a standard endurance ride into true mountain-distance terrain. The roads feel quiet, remote, and purpose-built for climbers seeking long uninterrupted efforts. 3. Long Inland Climbing Systems. The route contains multiple sustained climbs, long seated climbing sections, and repeated elevation accumulation over many hours. Typical climbs range from 5–12 km with gradients generally between 4–7%, including occasional steeper upper ramps. Unlike coastal terrain, the climbs here are smoother, the rhythm steadier, and the aerobic load far more relentless over time. 4. Deep Catalunya Rollers. One of the hidden difficulties of the route is the endless rolling terrain between the major climbs. These sections include false flats, long drags, and repeated small elevation gains that feel manageable individually but become deeply exhausting collectively over nearly 150 km. This creates huge cumulative muscular fatigue, continuous aerobic load, and very limited passive recovery opportunities. 5. Descents. Descents throughout the route are long, fast, and flowing. Riders encounter forest-covered corners, high-speed valley returns, and sustained downhill sections between the larger climbs. Compared to coastal descents, these roads are generally less technical, more rhythmical, and better suited for recovery. However, the sheer duration of the ride means fatigue still accumulates heavily despite the smoother terrain. 6. Ride Character – What Makes This Route Hard. This route is difficult not because of one impossible climb or brutally steep gradients, but because of its overall duration, climbing density, endless terrain transitions, and psychological endurance demands. The suffering style is deep, aerobic, progressive, and relentlessly accumulative over time. This is endurance fatigue in its purest form. 7. Overall Impression. This is one of the biggest-feeling rides in the collection and one of the most psychologically demanding endurance routes available. It stands as one of the strongest examples of deep inland Catalunya cycling, delivering a ride experience that feels vast, remote, and quietly relentless. Success on this route depends almost entirely on pacing discipline, fueling strategy, endurance conditioning, and the ability to manage cumulative fatigue over an exceptionally long day in the saddle.",
+          "extraImage": "assets/gpx_files/longRoutes/DeeeepDeeeepCatalyuna_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/DeeeepDeeeepCatalyuna.gpx",
+          "id": "lr14"
+        },
+        {
+          "title": "Girona Figueres St Pellaia",
+          "image": "assets/gpx_files/longRoutes/GironaFigueresStPellaia_map.png",
+          "distance": 145.1,
+          "ascent": 1656,
+          "maxAltitude": 343,
+          "description": "",
+          "detailedDescription": "",
+          "extraImage": "assets/gpx_files/longRoutes/GironaFigueresStPellaia_profile.png",
+          "gpxFile": "assets/gpx_files/longRoutes/GironaFigueresStPellaia.gpx",
+          "id": "lr15"
         }
       ]
     },
@@ -182,7 +205,7 @@
         {
           "title": "Llora Constantin St Gregori(recovery)",
           "image": "assets/gpx_files/shortRoutes/COURSE_LloraConstantinStGregori(recovery)_map.png",
-          "distance": 41,
+          "distance": 41.0,
           "ascent": 315,
           "maxAltitude": 309,
           "description": "",
@@ -206,7 +229,7 @@
         {
           "title": "Volta Puig",
           "image": "assets/gpx_files/shortRoutes/COURSE_VoltaPuig_map.png",
-          "distance": 31,
+          "distance": 31.0,
           "ascent": 382,
           "maxAltitude": 322,
           "description": "",
