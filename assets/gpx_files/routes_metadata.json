@@ -67,15 +67,15 @@
             "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_LloraConstantinStGregori(recovery).gpx"
         },
         {
-            "title": "COURSE_Medinya→Cornella→Banyoles",
-            "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_Medinya→Cornella→Banyoles_map.png",
+            "title": "COURSE_Medinya_Cornella_Banyoles",
+            "image": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_Medinya_Cornella_Banyoles_map.png",
             "distance": 56.9,
             "ascent": 512,
             "maxAltitude": 209,
             "description": "",
             "detailedDescription": "",
-            "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_Medinya→Cornella→Banyoles_profile.png",
-            "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_Medinya→Cornella→Banyoles.gpx"
+            "extraImage": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_Medinya_Cornella_Banyoles_profile.png",
+            "gpxFile": "G:\\Git\\cycling-routes\\src\\assets\\gpx_files\\shortRoutes\\COURSE_Medinya_Cornella_Banyoles.gpx"
         },
         {
             "title": "COURSE_VoltaPuig",
